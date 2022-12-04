@@ -24,6 +24,15 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   });
 
 navToggle.addEventListener('click', () => {
+  let close = document.getElementById('icon-close');
+  let open = document.getElementById('icon-hamburger');
+  if(close.style.display == 'block'){
+    close.style.display = 'none';
+    open.style.display = 'block';
+  }else {
+    close.style.display = 'block';
+    open.style.display = 'none';
+  }
     navigation.hasAttribute('data-visible') 
     ? navToggle.setAttribute('aria-expanded', false)
     : navToggle.setAttribute('aria-expanded', true);

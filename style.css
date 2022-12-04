@@ -315,6 +315,10 @@ header.sticky{
         border: none;
         padding: 1.5rem;
     }
+
+    .mobile-nav .icon-hamburger {
+        display: block;
+    }
     
     .mobile-nav .icon-close{
         display: none;
